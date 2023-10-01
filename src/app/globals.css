@@ -2,7 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #27272a;
+  
+}
+
+.teknoids{
+  transform: perspective(100px) rotateX(-10deg);
+  -webkit-transform: perspective(100px) rotateX(-10deg);
+}
+
+.studio{
+  transform: perspective(100px) rotateX(10deg);
+  -webkit-transform: perspective(100px) rotateX(10deg);
+}
+/* 2xl */
+@media only screen and (max-width: 1535px) {
+  .studio{
+    line-height: -1rem;
+  }
+}
+/* xl */
+@media only screen and (max-width: 1279px) {
+
+}
+/* lg */
+@media only screen and (max-width: 1023px) {
+
+}
+/* md */
+@media only screen and (max-width: 767px) {
+
+}
+/* sm */
+@media only screen and (max-width: 639px) {
+
+}
+/* xs */
+@media only screen and (max-width: 475px) {
+
+}
+
+/* 
+background-color: #38383b;
 :root {
+  color: rgb(30, 41, 59);
+  color: rgb(255,255,255);
+
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +72,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */

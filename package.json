@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "local": "npx serve@latest out",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
