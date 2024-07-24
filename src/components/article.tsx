@@ -1,9 +1,14 @@
 import Image from "next/image";
-import styles from "./article.module.css";
+import styles from "./article.module.scss";
+import { ReactNode } from "react";
 
-export default function Article() {
+interface ArticleProps {
+  children?: ReactNode;
+}
+
+export default function Article({ children } : ArticleProps) {
   return ( 
-  <section className={styles.article}>
-
-  </section>);
+  <article className={styles.article}>
+    {children}
+  </article>);
 }

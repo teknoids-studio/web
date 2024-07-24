@@ -1,22 +1,27 @@
 import Image from "next/image";
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
+import Logo from "@/components/logo";
+import Header from "@/components/header";
 
 export default function Home() {
   return (
     <main className={styles.main}>
+      <Header />
+      
       <section className={styles.description}>
-    
+       
       </section>
 
       <article className={styles.center}>
-        <Image
+        {/* <Image
           className={styles.logo}
           src="/next.svg"
           alt="Next.js Logo"
           width={180}
           height={37}
           priority
-        />
+        /> */}
+        
       </article>
 
       <div className={styles.grid}>

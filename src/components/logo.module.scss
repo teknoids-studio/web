@@ -1,17 +1,50 @@
-@import '../styles//teknoids.scss';
+@import '../app/teknoids.scss';
 
 .logo{
     width: 80%;
-}
-.teknoids {
-    fill: $teknoids;
-    display: block;
     margin: auto;
-}
-
-.studio {
-    fill: $teknoids;
-    display: block;
-    margin: auto;
-    width: 60%;
+        .teknoids {
+            fill: $teknoids;
+            display: block;
+            margin: auto;
+            padding-bottom: 0.7rem;
+        }
+        
+        .studio {
+            fill: $teknoids;
+            display: block;
+            margin: auto;
+            width: 60%;
+        }
+        
+        position: relative;
+        
+        
+        .animatedDiv {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 2px; /* Adjust height as needed */
+            background-color: red; /* Adjust color as needed */
+            animation: moveThrough 10s linear infinite;
+        }
+    
+        @keyframes moveThrough {
+            0% {
+                transform: translateX(0) translateY(0);
+            }
+            25% {
+                transform: translateX(100%) translateY(0);
+            }
+            50% {
+                transform: translateX(100%) translateY(100px); /* Adjust the Y value as needed */
+            }
+            75% {
+                transform: translateX(0) translateY(100px); /* Adjust the Y value as needed */
+            }
+            100% {
+                transform: translateX(0) translateY(0);
+            }
+        }
 }

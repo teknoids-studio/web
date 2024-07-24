@@ -1,5 +1,5 @@
 import Image from "next/image";
-import styles from "./section.module.css";
+import styles from "./section.module.scss";
 
 export default function Section() {
   return ( 
