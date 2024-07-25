@@ -2,8 +2,8 @@ $teknoids : rgb(220,40,90);
 $code : rgb(69, 242, 72);
 
 
-$primary : rgb(220,40,90);
-$secondary : rgb(220,230,70);
+$primary : brighten($teknoids, 20%);
+$secondary : rgb(221, 229, 107);
 $tertiary : rgb(40,220,170);
 $accent: rgb(40,135,220);
 
