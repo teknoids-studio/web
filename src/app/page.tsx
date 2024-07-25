@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.scss";
-import Logo from "@/components/logo";
 import Header from "@/components/header";
 
 export default function Home() {
@@ -76,5 +75,6 @@ export default function Home() {
         </a>
       </div>
     </main>
+  
   );
 }
