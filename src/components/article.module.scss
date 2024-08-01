@@ -1,9 +1,14 @@
-.article{
+@import '../app/teknoids.scss';
 
+.article{
+    border: .3rem solid transparent;
+    margin: auto;
+    width: fit-content;
+    
+    padding: 1rem;
     .border
     {
-        border-radius:  20px;
-        border: 1px solid #00000080;
-        
+        border: .3rem solid $primary;  
+
     }
 }

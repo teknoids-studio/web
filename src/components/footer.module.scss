@@ -1,6 +1,10 @@
 .footer {
-    padding: 20px 0;
-    text-align: center;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6rem 6rem 1rem 6rem;
+ 
 
     .footer_content {
         display: flex;

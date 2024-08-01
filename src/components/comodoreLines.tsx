@@ -1,4 +1,3 @@
-import Image from "next/image";
 import styles from "./comodoreLines.module.scss";
 
 export default function CommodoreLines() {
