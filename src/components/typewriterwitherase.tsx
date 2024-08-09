@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-interface TypewriterTextProps {
+interface TypewriterWithEraseProps {
     text: string[];
     typingDelay?: number;
     eraserDelay?: number;
     newTextDelay?: number;
     showCursor?: boolean;
 }
-const TypewriterText = ({ text, showCursor = true, typingDelay = 250, eraserDelay = 100, newTextDelay = 1000, ...other }: TypewriterTextProps) => {
+const TypewriterWithErase = ({ text, showCursor = true, typingDelay = 250, eraserDelay = 100, newTextDelay = 1000, ...other }: TypewriterWithEraseProps) => {
     const textSpan = useRef<HTMLSpanElement | null>(null);
     const [currentWordIndex, setCurrentWordIndex] = useState(0);
     const [isErasing, setIsErasing] = useState(false);
@@ -49,4 +49,4 @@ const TypewriterText = ({ text, showCursor = true, typingDelay = 250, eraserDela
         <span>{text[currentWordIndex].substring(0, currentLetterIndex)}{renderCursor()}</span>
     )
 }
-export { TypewriterText };
+export { TypewriterWithErase };
