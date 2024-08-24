@@ -9,8 +9,12 @@ export default function Header() {
   <header className={styles.header}>
     <Logo />
     <Article >
-      <h1>Next.js</h1>
-      <h2><Typewriter showCursor={true}><span> with TypeScript, ESLint, Prettier, and SCSS</span></Typewriter></h2>
-    </Article>
+      
+      <h2>
+        <Typewriter  showCursor={true}>
+          <span> with TypeScript, ESLint, Prettier, and SCSS</span>
+        </Typewriter>
+      </h2>
+      </Article>
   </header>);
 }

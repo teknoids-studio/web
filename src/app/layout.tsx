@@ -3,6 +3,7 @@ import { Inter, VT323 } from "next/font/google";
 import "./globals.scss";
 import Footer from "@/components/footer";
 import config from "@/config";
+import CommodoreLines from "@/components/comodoreLines";
 
 const inter = Inter({ subsets: ["latin"],
   display: 'swap',
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={!vt323.className ? inter.className: vt323.className}>{children}
       <Footer />
+      <CommodoreLines />
       </body>
      
     </html>

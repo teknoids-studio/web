@@ -19,7 +19,7 @@ export default function Footer() {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <a href="#home">Home</a>
+              <a href="#top">Home</a>
             </li>
             <li>
               <a href="#about">About</a>
@@ -32,27 +32,17 @@ export default function Footer() {
             </li>
           </ul>
         </div>
-
-        <div className={`${styles.footer_section} ${styles.contact}`}>
-          <h3>Contact Us</h3>
-          <p>Email: info@example.com</p>
-          <p>Phone: (123) 456-7890</p>
-          <p>Address: 123 Main Street, Anytown, USA</p>
-        </div>
+        
 
         <div className={`${styles.footer_section} ${styles.social}`}>
           <h3>Follow Us</h3>
-          <a href="https://facebook.com" target="_blank">
-            Facebook
+          <a href="https://www.linkedin.com/company/teknoids.se/about/" target="_blank">
+            Linked in
           </a>{" "}
           |
-          <a href="https://twitter.com" target="_blank">
-            Twitter
-          </a>{" "}
-          |
-          <a href="https://instagram.com" target="_blank">
-            Instagram
-          </a>
+          <a href="https://github.com/teknoids-studio" target="_blank">
+            GitHub
+          </a>{" "}          
         </div>
       </div>
 

@@ -1,17 +1,20 @@
+
 import { ReactNode } from "react";
 import styles from "./typewriter.module.scss";
 
 interface TypewriterProps {
+   // text: string[];
     showCursor?: boolean;
-    children?: ReactNode;
+    children: ReactNode;
 }
-const Typewriter = ({ showCursor = true, children }: TypewriterProps) => {
-   
-    
+const Typewriter = ({ showCursor = true, children, ...other }: TypewriterProps) => {
     return (
-        <div className={`${styles.typewriter } ${showCursor ? 'showCursor' : ''}`}>
+        <section className={styles.typewriterRoot}>
+        <div className={`${styles.typewriter } ${!showCursor ? styles.no_caret : ''}`}>
             {children}
-        </div>        
+
+        </div>
+        </section>
     )
 }
 export { Typewriter };
