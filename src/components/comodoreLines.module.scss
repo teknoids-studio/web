@@ -1,0 +1,53 @@
+@import '../app/teknoids.scss';
+
+.container{
+    width: 80%;
+    height: auto;
+}
+
+.line {
+   // position: absolute;
+    width: 0%;
+    height: 2px;
+    // top: 50%;
+    // left: 0;
+    // transform: translateY(-50%);
+  }
+  
+  .line1 {
+    background-color: $commodore1;
+    animation: draw-line 1s forwards;
+  }
+  
+  .line2 {
+    background-color: $commodore2;
+    animation: draw-line 1s forwards;
+    animation-delay: 0.2s;
+  }
+  
+  .line3 {
+    background-color: $commodore3;
+    animation: draw-line 1s forwards;
+    animation-delay: 0.4s;
+  }
+  
+  .line4 {
+    background-color: $commodore4;
+    animation: draw-line 1s forwards;
+    animation-delay: 0.6s;
+  }
+  
+  .line5 {
+    background-color: $commodore5;
+    animation: draw-line 1s forwards;
+    animation-delay: 0.8s;
+  }
+  
+  @keyframes draw-line {
+    from {
+        width: 0%;
+      }
+    to {
+      width: 100%;
+    }
+  }

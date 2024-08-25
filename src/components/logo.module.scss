@@ -1,0 +1,83 @@
+@import '../app/teknoids.scss';
+
+
+
+$particle-color: rgb(239, 255, 16);
+$glow-color1: lighten($particle-color, 20%);
+$glow-color2: lighten($particle-color, 40%);
+$glow-color3: lighten($particle-color, 60%);
+$radius-1: 0.1rem;
+$radius-2: 0.2rem;
+$radius-3: 0.3rem;
+
+.logo{
+    width: 80%;
+    margin: auto;
+
+        #particleSvg{
+          position: absolute;
+          width: 100%;
+        }
+
+        .teknoids {
+            fill: $teknoids;
+            display: block;
+            margin: auto;
+            padding-bottom: 0.7rem;
+            z-index: 100;
+      
+          //   stroke: red;
+          //   stroke-width: 1;
+          //  // fill-opacity: 0;
+           // filter: url(#glow);
+  
+        }
+        
+        .studio {
+            fill: $teknoids;
+            display: block;
+            margin: auto;
+            width: 60%;
+            z-index: 100;
+    
+        }
+        
+        position: relative;
+
+        
+        @keyframes moveAlongPath {
+            0% {
+                offset-distance: 0%;
+                z-index: -1000;
+                
+              }
+              5%{
+                visibility: visible;
+                filter: drop-shadow(0 0 $radius-1 $glow-color1) drop-shadow(0 0 $radius-2 $glow-color2) drop-shadow(0 0 $radius-3 $glow-color3);
+              }
+              45% {
+                z-index: 200;
+                r:.2rem;
+              }
+              100% {
+                offset-distance: 100%;
+                visibility: hidden;
+                filter: drop-shadow(0 0 $radius-1 $glow-color1) drop-shadow(0 0 $radius-2 $glow-color2) drop-shadow(0 0 $radius-3 $glow-color3);
+              }
+          }
+          
+          .object {
+            visibility: hidden;
+            // offset-path: path("M6.2824 19.217c35.888-3.9415 71.74-8.5156 107.77-10.896 23.653 0.16927 47.402 0.41515 70.909 3.1733 6.9928 0.86477 11.856 7.2459 11.682 14.147 1.0822 6.5434-2.37 12.62-7.3644 16.609-9.2315 6.7609-21.262 4.4046-31.914 4.2976-29.274-1.7108-58.476-4.4714-87.757-6.0938-15.763-0.98569-31.799-2.2641-47.434 0.52673-9.4449 2.8207-15.392 15.438-9.6914 23.967 6.4978 6.762 15.457 6.4977 25.253 6.9111 13.503 0.22154 27.02-3.0961 40.504-3.9266");
+            offset-path: path("m4.0164 12.18 182.98 0.052406v26.898l-165.83-0.32075v24.377h47.791l17.811-0.03789");
+            offset-rotate: auto;
+            animation: moveAlongPath 5s ease-in-out;// infinite;
+            r:.1rem;
+            z-index: -1000;
+    
+            fill: #dee2a1;//$particle-color;
+            //stroke: url(#radial-gradient);
+            /* Glowing effect */
+            filter: drop-shadow(0 0 $radius-1 $glow-color1) drop-shadow(0 0 $radius-2 $glow-color2) drop-shadow(0 0 $glow-color3 $glow-color3); 
+          }
+}
