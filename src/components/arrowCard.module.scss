@@ -1,0 +1,41 @@
+@import '../app/teknoids.scss';
+
+.card {
+    padding: 1rem 1.2rem;
+    border-radius: var(--border-radius);
+    background: rgba(var(--card-rgb), 0);
+    border: 1px solid rgba(var(--card-border-rgb), 0);
+
+    h2{       
+        display: flex;
+        flex-wrap: wrap;
+        span {
+            display: inline-block;
+            transition: transform 0.3s ease, color 0.3s ease;
+            padding-left: .2rem;
+            svg{
+                display: flex;
+                margin: auto;                
+                fill: $secondary;
+            }
+          }
+
+        &:hover span {
+            animation: animateArrow .7s linear infinite;
+    
+        }
+
+        @keyframes animateArrow {
+            0% {
+                transform: translateX(0px); // Moves the span 10 pixels to the right
+            }
+            50% {                
+                transform: translateX(50px); // Moves the span 10 pixels to the right
+            }
+            100% {
+                transform: translateX(0px); // Moves the span 10 pixels to the right
+            }
+          }
+    }
+    
+  }

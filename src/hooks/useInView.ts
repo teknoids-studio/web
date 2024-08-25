@@ -1,21 +1,19 @@
 import { useEffect, useState, useRef } from 'react';
 
 interface UseInViewOptions {
-  root?: Element | null;
+  root?: HTMLDivElement | null;
   rootMargin?: string;
   threshold?: number | number[];
 }
 
-export const useInView = (options?: UseInViewOptions): [React.RefObject<Element>, boolean] => {
+export const useInView = (options?: UseInViewOptions): [React.RefObject<HTMLDivElement>, boolean] => {
   const [isInView, setIsInView] = useState(false);
-  const ref = useRef<Element>(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    console.log(isInView)
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
-        console.log('Is intersecting:', entry.isIntersecting);
         setIsInView(entry.isIntersecting);
       },
       {

@@ -38,6 +38,11 @@
     font-family: var(--font-mono);
   }
 
+  .services {
+    margin: 1rem 0 2rem 0;
+      
+  }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(25%, auto));

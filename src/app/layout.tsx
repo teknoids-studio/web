@@ -28,8 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={!vt323.className ? inter.className: vt323.className}>{children}
-      <Footer />
-      <CommodoreLines />
+      <Footer />    
       </body>
      
     </html>
