@@ -1,5 +1,5 @@
 import {sectionTopic} from "../enumerations/enums";
-import styles from "./section.module.scss";
+import styles from "../../components/section.module.scss";
 
 const styleMapper = (topic: sectionTopic): string => {
     switch (topic) {

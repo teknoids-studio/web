@@ -9,10 +9,9 @@ export default function Header() {
   <header className={styles.header}>
     <Logo />
     <Article >
-      
       <h2>
         <Typewriter  showCursor={true}>
-          <span> with TypeScript, ESLint, Prettier, and SCSS</span>
+          <span> Freelance developer, technical leader and product manager</span>
         </Typewriter>
       </h2>
       </Article>

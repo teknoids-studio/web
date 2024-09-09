@@ -72,19 +72,22 @@ export default function Home() {
               <div>
               <p>
                 Over the past two decades, I have worked on a wide range of
-                projects, from small startups to large enterprises. Some of my
+                projects, from smaller startups to large enterprises. Some of my
                 career highlights include:
               </p>
-              <p>
-                Technical Lead: Spearheaded the development of a large-scale
-                cloud-based application on AWS, delivering a high-performance
-                solution that scaled to millions of users. Team Lead: Managed a
-                cross-functional team of developers, QA engineers, and DevOps
-                professionals, ensuring seamless project delivery from
-                conception to deployment. Section Manager: Oversaw multiple
-                development teams, handled resource planning, staff development,
-                and project prioritization, resulting in improved team
-                productivity and project success rates.
+              <p className={styles.highlighted}>
+                As a .NET Developer: I have developed numerous web applications
+                and enterprise software solutions using the .NET framework. My
+                expertise includes C#, ASP.NET, MVC, and Web API, among other
+                technologies.
+              </p>
+              <p>                
+                As Technical Lead and Dev lead: I Spearheaded the development of cloud-based application on AWS and azure, delivering a high-performance
+                solution that scaled. 
+                </p>
+                <p>                
+                Section Manager: Manegerial position with responssibilities of 15+ staff, 
+                handling staff development, reviews and rewards.
               </p>
               </div>
             </div>
@@ -105,7 +108,7 @@ export default function Home() {
               standards but are also scalable, maintainable, and secure.
             </p>
           </Article>
-
+          <Article>
           <h3>Cloud Development (AWS & Azure)</h3>
           <p>
             As an experienced practitioner of cloud technologies, I provide
@@ -115,6 +118,8 @@ export default function Home() {
             have the expertise to deliver results that maximize performance and
             minimize costs.
           </p>
+          </Article>
+          <Article>
           <h3>Technical Leadership & Team Management</h3>
           <p>
             With extensive experience as a Technical Lead and Section Manager, I
@@ -125,23 +130,25 @@ export default function Home() {
             your team&apos;s performance, whether through mentoring, process
             improvement, or technical strategy development.
           </p>
+          </Article>          
         </Section>
-        <Section
+        {/* <Section
           id="cloud"
           headerText="Cloud development"
           topic={sectionTopic.Cloud}
         >
           <p></p>
-        </Section>
-        <Section id="games" headerText="Games" topic={sectionTopic.Game}>
-          <p>
+        </Section> */}
+        <Section id="games" headerText="Games" topic={sectionTopic.Game} useBorder={true} >                
+          <p className={styles.highlighted}>
             In addition to my extensive experience in IT and cloud development,
             I am expanding my expertise into the exciting world of game
             development. I am actively building skills in Unity and Godot 4, two
             of the most powerful and versatile game engines in the industry. My
             goal is to create immersive and engaging games that combine
             technical excellence with creative storytelling.
-          </p>
+          </p>          
+          <Article>
           <h3>Unity Development</h3>
 
           <p>
@@ -158,6 +165,8 @@ export default function Home() {
             C# to write efficient and scalable code that drives game logic, AI,
             and interactions.
           </p>
+          </Article>
+          <Article>
           <h3>Godot 4 Development</h3>
           <p>
             Godot 4 is a rapidly growing open-source game engine known for its
@@ -173,6 +182,8 @@ export default function Home() {
             in Godot 4 are optimized for deployment across various platforms,
             including desktop, mobile, and web.
           </p>
+          </Article>
+          <Article>
           <h3>Why Game Development?</h3>
           <p>
             My interest in game development stems from a desire to blend my
@@ -192,6 +203,7 @@ export default function Home() {
             developers, artists, and storytellers to create games that leave a
             lasting impact.
           </p>
+          </Article>          
           <p>
             If you&apos;re interested in collaborating on a game project or
             discussing ideas, feel free to reach out. Let&apos;s create

@@ -2,24 +2,27 @@
 
 
 .about {
-    border: 0.2rem solid $commodore1;
+    color: $commodore1;
 }
 
 .services{
-    border: 0.2rem solid $commodore2;
+    color: $commodore2;
 }
 
 .cloud{
-    border: 0.2rem solid $commodore3;
+    color: $commodore3;
 }
 
 .game{
-    border: 0.2rem solid $commodore4;
+    color: $commodore5;
+}
+
+.border{
+    border: 0.2rem solid;
 }
 
 .section{  
-      
-    
+     
     max-width: 80vw;
     padding: 1rem;
     margin: auto;
@@ -45,10 +48,6 @@
         h3{
             color: $secondary;
         }
-    }
-
-    #game{
-        color: $commodore1;
     }
 
 

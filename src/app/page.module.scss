@@ -1,3 +1,5 @@
+@import '../app/teknoids.scss';
+
 .main {
   display: flex;
   flex-direction: column;
@@ -41,6 +43,11 @@
   .services {
     margin: 1rem 0 2rem 0;
       
+  }
+
+  .highlighted {
+    font-style: bold;
+    color: $teknoids;
   }
 
   .grid {
