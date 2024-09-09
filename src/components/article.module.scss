@@ -1,5 +1,27 @@
 @import '../app/teknoids.scss';
 
+.about, .commodore1 {
+    border: 0.2rem solid $commodore1;
+}
+
+.services, .commodore2{
+    border: 0.2rem solid $commodore2;
+}
+
+.cloud, .commodore3{
+    border: 0.2rem solid $commodore3;
+}
+
+.game, .commodore4{
+    border: 0.2rem solid $commodore4;
+}
+
+.none, .commodore5{
+    border: 0.2rem solid $commodore5;
+}
+
+
+
 .article{
     border: .3rem solid transparent;
     margin: auto;
@@ -11,4 +33,6 @@
         border: .3rem solid $primary;  
 
     }
+
+    
 }

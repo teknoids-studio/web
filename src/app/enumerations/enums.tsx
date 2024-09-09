@@ -1,4 +1,4 @@
-const enum sectionTopic {
+enum sectionTopic {
     None = 0,
     About,
     Services,

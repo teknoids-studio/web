@@ -50,6 +50,16 @@
     width: var(--max-width);
   }
 
+  .grid2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
+    gap: 16px; /* Optional: Add some gap between grid items */
+  }
+
+  .flex{
+    display: flex;
+  }
+
   .card {
     padding: 1rem 1.2rem;
     border-radius: var(--border-radius);
