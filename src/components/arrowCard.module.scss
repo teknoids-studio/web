@@ -1,22 +1,28 @@
 @import '../app/teknoids.scss';
 
 .card {
+    color: $teknoids;
     padding: 1rem 1.2rem;
     border-radius: var(--border-radius);
     background: rgba(var(--card-rgb), 0);
     border: 1px solid rgba(var(--card-border-rgb), 0);
-
+    p{
+     font-size: 1.5rem;   
+     padding: 1rem 0;
+    }
     h2{       
         display: flex;
         flex-wrap: wrap;
+        font-size: 2rem;
         span {
             display: inline-block;
             transition: transform 0.3s ease, color 0.3s ease;
             padding-left: .2rem;
+            color: $commodore5;;
             svg{
                 display: flex;
                 margin: auto;                
-                fill: $secondary;
+                fill: $commodore5;
             }
           }
 

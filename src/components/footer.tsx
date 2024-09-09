@@ -5,8 +5,8 @@ import config from "@/config";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footer_content}>
-        <div className={`${styles.footer_section} ${styles.about}`}>
+      <div className={styles.flexGrid}>
+        <div className={`${styles.column} ${styles.about}`}>
           <h3>About Us</h3>
           <p>
             We are a company dedicated to providing the best services and
@@ -15,7 +15,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className={`${styles.footer_section} ${styles.links}`}>
+        {/* <div className={`${styles.column} ${styles.links}`}>
           <h3>Quick Links</h3>
           <ul>
             <li>
@@ -31,15 +31,15 @@ export default function Footer() {
               <a href="#contact">Contact</a>
             </li>
           </ul>
-        </div>
+        </div> */}
         
 
-        <div className={`${styles.footer_section} ${styles.social}`}>
+        <div className={`${styles.column} ${styles.social}`}>
           <h3>Follow Us</h3>
           <a href="https://www.linkedin.com/company/teknoids.se/about/" target="_blank">
             Linked in
           </a>{" "}
-          |
+          <span>|</span>
           <a href="https://github.com/teknoids-studio" target="_blank">
             GitHub
           </a>{" "}          

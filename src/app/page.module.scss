@@ -38,11 +38,13 @@
   .code {
     font-weight: 700;
     font-family: var(--font-mono);
+    color: $code;
+    background-color: $tertiary
   }
 
   .services {
     margin: 1rem 0 2rem 0;
-      
+
   }
 
   .highlighted {
@@ -57,13 +59,37 @@
     width: var(--max-width);
   }
 
-  .grid2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-    gap: 16px; /* Optional: Add some gap between grid items */
+  .flexGrid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
-  .flex{
+  .column {
+    background-color: #f2f2f2;
+    //border: 1px solid #ccc;
+    padding: 1rem;
+    margin: .5rem;
+    flex: 1 1 calc(25% - 1rem);
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .column {
+      flex: 1 1 calc(50% - 1rem);
+      /* For tablets, display two columns */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .column {
+      flex: 1 1 calc(100% - 1rem);
+      /* For mobile, display one column */
+    }
+  }
+
+
+  .flex {
     display: flex;
   }
 
