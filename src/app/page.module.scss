@@ -1,3 +1,5 @@
+@import '../app/teknoids.scss';
+
 .main {
   display: flex;
   flex-direction: column;
@@ -36,11 +38,18 @@
   .code {
     font-weight: 700;
     font-family: var(--font-mono);
+    color: $code;
+    background-color: $tertiary
   }
 
   .services {
     margin: 1rem 0 2rem 0;
-      
+
+  }
+
+  .highlighted {
+    font-style: bold;
+    color: $teknoids;
   }
 
   .grid {
@@ -48,6 +57,40 @@
     grid-template-columns: repeat(4, minmax(25%, auto));
     max-width: 100%;
     width: var(--max-width);
+  }
+
+  .flexGrid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .column {
+    
+    border: .2rem solid $commodore5;
+    padding: 1rem;
+    margin: .5rem;
+    flex: 1 1 calc(25% - 1rem);
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .column {
+      flex: 1 1 calc(50% - 1rem);
+      /* For tablets, display two columns */
+    }
+  }
+
+  @media (max-width: 480px) {
+    .column {
+      flex: 1 1 calc(100% - 1rem);
+      /* For mobile, display one column */
+    }
+  }
+
+
+  .flex {
+    display: flex;
   }
 
   .card {

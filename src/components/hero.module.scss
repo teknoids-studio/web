@@ -1,0 +1,32 @@
+@import '../app/teknoids.scss';
+
+.hero{
+    font-size: 2rem;
+    margin: 5rem auto;
+
+}
+
+.commodore1 {
+    color: $commodore1;
+}
+
+.commodore2{
+    color: $commodore2;
+}
+
+.commodore3{
+    color: $commodore3;
+}
+
+ .commodore4{
+    color:  $commodore4;
+}
+
+ .commodore5{
+    color:  $commodore5;
+}
+
+.border{
+    padding: 1rem;
+    border: 0.2rem solid;
+} 

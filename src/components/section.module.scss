@@ -1,13 +1,54 @@
-.section{
-   
+@import '../app/teknoids.scss';
+
+
+.about {
+    color: $commodore1;
+}
+
+.services{
+    color: $commodore2;
+}
+
+.cloud{
+    color: $commodore3;
+}
+
+.game{
+    color: $commodore5;
+}
+
+.border{
+    border: 0.2rem solid;
+}
+
+.section{  
+     
+    max-width: 80vw;
+    padding: 1rem;
+    margin: auto;
+
+
+    .wrapper{
+        display: flex;
+        justify-content: center; /* Centers horizontally */
+        align-items: center;    /* Centers vertically */
+        //height: 50vh;   
+    }
+
     h2{
         text-align: center;
-        font-size: 1.5em ;
+        font-size: 2em ;
     }
 
     .content{
         margin: auto;
-        max-width: 80%;
-        font-size: 1.2em ;
+        //max-width: 80%;
+        font-size: 1.4em ;
+
+        h3{
+            color: $secondary;
+        }
     }
+
+
 }
