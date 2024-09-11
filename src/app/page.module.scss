@@ -66,8 +66,8 @@
   }
 
   .column {
-    background-color: #f2f2f2;
-    //border: 1px solid #ccc;
+    
+    border: .2rem solid $commodore5;
     padding: 1rem;
     margin: .5rem;
     flex: 1 1 calc(25% - 1rem);

@@ -7,6 +7,7 @@ import { sectionTopic } from "./enumerations/enums";
 import Section from "@/components/section";
 import Article from "@/components/article";
 import Hero from "@/components/hero";
+import Terminal from "@/components/terminal";
 
 export default function Home() {
   return (
@@ -52,6 +53,10 @@ export default function Home() {
             My deep technical expertise, combined with my leadership experience, enables me to deliver high-quality solutions while ensuring that teams operate efficiently and effectively, driving success and innovation.
           </p>
         </Hero>
+
+        <Terminal>
+
+        </Terminal>
         {/* <Section id="about" headerText="About" topic={sectionTopic.About}>
           <Article>
             <div className={styles.flex}>
@@ -122,20 +127,19 @@ export default function Home() {
             <div className={styles.column}>
               <ArrowCard headerText="Development" href="">
                 <p>
-                  I offer comprehensive .NET development services, from building complex web applications to designing enterprise-level software solutions. With a deep understanding of the .NET framework, I ensure that your projects are not only built to the highest standards but are also scalable, maintainable, and secure.
-                  Cloud Development (AWS & Azure)
+                  I offer development services (using .NET): building robust, scalable, maintainable and secure software solutions, using known practises such as micro-services and event driven architectures.
                 </p>
               </ArrowCard>
             </div>
             <div className={styles.column}>
               <ArrowCard headerText="Cloud Development" href="">
-                <p>As an experienced practitioner of cloud technologies, I provide development services on both AWS and Azure platforms. Whether you need to migrate existing applications to the cloud, design new cloud-native solutions, or optimize your cloud infrastructure, I have the expertise to deliver results that maximize performance and minimize costs.</p>
+                <p>I provide development services on both AWS and Azure platforms. Whether you need to migrate existing applications to the cloud, design new cloud-native solutions, I have the expertise to deliver results that maximize performance and minimize costs.</p>
               </ArrowCard>
             </div>
             <div className={styles.column}>
               <ArrowCard headerText="Tech Leadership & Team Management" href="">
                 <p>
-                  With extensive experience as a Technical Lead and Section Manager, I can guide your development teams to success. I bring a strong focus on best practices, efficient workflows, and a collaborative approach, ensuring that projects are delivered on time and to specification. I also offer consulting services to help optimize your team's performance, whether through mentoring, process improvement, or technical strategy development.
+                  As a Technical Lead, I can guide development teams to success. I bring a strong focus on best practices, efficient workflows, and a collaborative approach. I also strive to optimize the team's performance, whether through mentoring, process improvement, or technical strategy development.
                 </p>
               </ArrowCard>
             </div>
