@@ -1,11 +1,9 @@
-'use client';
 
 import React, { ReactNode } from 'react';
 import styles from "./arrowCard.module.scss";
 import { sectionTopic } from "../app/enumerations/enums";
 import Invader from './invader';
 import Image from 'next/image';
-
 
 interface ArrowCardProps {
     headerText: string;
@@ -25,20 +23,14 @@ const renderHeader = (headerText: string, style: sectionTopic = sectionTopic.Non
             <span>-&gt;</span>
         }
     </h2>);
-
-
 }
 
 const ArrowCard = ({ headerText, href = '/', traget = "_blank", style = sectionTopic.None, children }: ArrowCardProps) => {
     if (href === null || href === undefined || href === '' || href === '#') {
         return (
 
-            <div
-
-                className={styles.card}
-            >
+            <div className={styles.card}>
                 {renderHeader(headerText, style)}
-
                 {children}
             </div>
         )
