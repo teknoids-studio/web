@@ -2,7 +2,7 @@
 const nextConfig = {
     output: 'export',
     reactStrictMode: true,
-    basePath: "",// /web
+    basePath: "/web",// /web
 };
 
 export default nextConfig;
